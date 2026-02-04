@@ -16,7 +16,7 @@ Real-time voice translation application using Web Speech API and AI translation 
 
 - React 19 + TypeScript
 - Vite
-- Tailwind CSS 4
+- Tailwind CSS 
 - Socket.IO Client
 - Web Speech API
 
@@ -26,7 +26,6 @@ Real-time voice translation application using Web Speech API and AI translation 
 - TypeScript
 - Socket.IO
 - Lingo.dev SDK for translation
-- Google Cloud Speech API (optional)
 
 ## Setup
 
@@ -80,7 +79,7 @@ Real-time voice translation application using Web Speech API and AI translation 
 ## Usage
 
 1. Select source language (language you'll speak)
-2. Select target language (language to translate to)
+2. Select target language (language you want to translate to)
 3. Click the microphone button to start recording
 4. Speak continuously - the app will keep listening
 5. Click the microphone again to stop
