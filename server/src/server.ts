@@ -24,17 +24,12 @@ app.get("/", (req, res) => {
 
 const server = createServer(app);
 
-const clientOrigin = process.env.CLIENT_ORIGIN;
-const allowedOrigins = [
-  "http://localhost:5173",
-  ...(clientOrigin ? clientOrigin.split(',') : [])
-];
-
-console.log(clientOrigin)
-
 const io = new Server(server, {
   cors: {
-    origin: allowedOrigins,
+    origin: [
+      "http://localhost:5173",
+      "https://69889600341b7ca58d071b46--text-to-voice-translation.netlify.app"
+    ],
     methods: ['GET', 'POST'],
     credentials: true
   },
