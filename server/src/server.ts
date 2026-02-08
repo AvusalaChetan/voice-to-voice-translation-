@@ -28,7 +28,8 @@ const io = new Server(server, {
   cors: {
     origin: [
       "http://localhost:5173",
-      "https://69889600341b7ca58d071b46--text-to-voice-translation.netlify.app"
+      "https://69889600341b7ca58d071b46--text-to-voice-translation.netlify.app",
+      "https://text-to-voice-translation.netlify.app/"
     ],
     methods: ['GET', 'POST'],
     credentials: true
