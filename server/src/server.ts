@@ -12,6 +12,10 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
+app.get("/",(req,res)=>{
+  return res.status(200).json({message:'every thing working fine '})
+})
+
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
